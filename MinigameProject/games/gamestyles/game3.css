@@ -1,0 +1,28 @@
+*{margin: 0;padding: 0;box-sizing: border-box;}
+body{
+    background-image: url("../gameimages/game3content/bg.jpg");
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 5vh;
+    margin-top: 5vh;
+}
+.grid-container {
+  width: 50vw;
+  height: 50vh;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(3, 1fr);
+  gap: 10px;
+  background-color: rgb(140, 161, 134);
+}
+button{
+    color: #fff;
+    padding: 2vh;
+    font-size: large;
+    border-radius: 1vh;
+    background-image: url("../gameimages/game3content/button.jfif");
+    border: none;
+}

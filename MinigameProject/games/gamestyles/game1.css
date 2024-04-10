@@ -1,0 +1,56 @@
+*{margin: 0;padding: 0;box-sizing: border-box;}
+
+body{
+    background: url("../gameimages/game1content/pirateship2.jpg") fixed;
+    color: #fff;
+}
+main{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+button{
+    background:none;
+    border: solid white;
+    padding: 2vh;
+    color: #fff;
+    border-radius: 10px;
+}
+.container{
+    background-image: url("../gameimages/game1content/gamearea.png");
+    width: 90vh;
+    height: 90vh;
+    border: solid .5ch rgb(218, 173, 34);
+    border-radius: 10px;
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    grid-template-rows: auto;
+}
+.scoreboard{
+    width: 95vh;
+    height: 15vh;
+    background-image: url("../gameimages/game1content/pngegg.png");
+    background-size:cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    z-index: 1;
+    margin-top: -10vh;
+}
+.disappear{
+    display: none;
+}
+.element{
+    width: 100%;
+    animation: moveDown 10s linear;
+}
+
+@keyframes moveDown {
+    100% {
+        transform: translateY(90vh);
+    }
+}

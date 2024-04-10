@@ -1,0 +1,53 @@
+*{margin: 0;padding: 0;box-sizing: border-box;}
+body{
+    background-image: url(../gameimages/game2content/bg.jpg);
+    background-attachment: fixed;
+    background-size: cover;
+
+}
+main{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+img{
+    width: 55%;
+}
+.hand{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.card{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.score{
+    color: #fff;
+    font-size: xx-large;
+}
+.cardvalue{
+    z-index: 10;
+    transform: translateY(-25vh);
+    font-size: x-large;
+    text-align: center;
+}
+.valuedcard{
+    font-size: xxx-large;
+}
+#currenthand{
+    z-index: 10;
+    transform: translateY(-25vh);
+    font-size: xxx-large;
+}
